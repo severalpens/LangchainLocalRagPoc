@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>API</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<title>API</title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>API</h1>
+    <div style="display: flex; justify-content: space-between; width: 50%">
+        <div id="prepare">
+            <h3>Prepare</h3>
+            <div><a href="api/load">Load</a></div>
+            <div><a href="api/split">Split</a></div>
+            <div><a href="api/embed">Embed</a></div>
+        </div>
+        <div id="query">
+            <h3>Query</h3>
+            <form action="/api/query" method="POST">
+                <label for="querytext">Query Text:</label>
+                <input type="text" id="querytext" name="querytext"
+                style="width: 100%;"
+                    value="What are the approaches to Task Decomposition?" required>
+                    <button type="submit">Submit</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
